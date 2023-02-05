@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div>
             <div className='home pt-5 px-4'>
-            <h1 className='text-warning text-center pt-5'>Marvel's Spider-Man Remastered</h1>
+            <h1 className='text-warning text-center mt-5 pt-5'>Marvel's Spider-Man Remastered</h1>
             <p className='text-white text-center'>"Marvel's Spider-Man Remastered" is a remastered version of the 2018 video game "Marvel's Spider-Man." The game is set in a fictionalized version of New York City and follows Peter Parker/Spider-Man as he battles various villains and tries to save the city. The remastered version features improved graphics and all of the DLC content from the original game. It's an action-adventure game with fast-paced combat, web-slinging, and an open-world setting that allows players to explore and interact with the city. The player can also collect various collectibles and upgrade gadgets and abilities. Overall, "Marvel's Spider-Man Remastered" is a must-play for fans and newcomers alike.</p>
                 <div className='nab-btn'>
                     <NavLink className='buy-link text-center' to='/'>GAME DETAILS</NavLink>
@@ -24,7 +24,7 @@ const Home = () => {
                     review={review} key= {review.id}
                 ></Review>).slice(0,3)
             }
-            <div className='w-auto mb-4'>
+            <div className='w-auto mb-5'>
                     <NavLink className='buy-link bg-info fw-bold text-white p-2 rounded-pill  px-4 w-auto text-center' to='/Reviews'>SEE ALL THE REVIEWS</NavLink>
                 </div>
             </div>
