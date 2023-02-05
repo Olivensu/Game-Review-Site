@@ -12,6 +12,7 @@ const Dashboard = () => {
     return (
       
         <div className='rechart row'>
+          <h2 className='text-center fw-bold mb-4'>Here is some chart about my statistics of this business..</h2>
             <div className='col-md-6 col'>
               <LineChart
               width={500}
@@ -32,7 +33,7 @@ const Dashboard = () => {
               <Line type="monotone" dataKey="investment" stroke="#8884d8" activeDot={{ r: 8 }} />
               <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
               </LineChart>
-              <p className='text-center m-3'>Investment, sells and revenue chart by LineChart</p>
+              <p className='text-center m-3 text-info'>Investment, sells and revenue chart by LineChart</p>
           </div>
           <div className='col-md-6 col'>
           <AreaChart
@@ -54,7 +55,7 @@ const Dashboard = () => {
           <Area type="monotone" dataKey="revenue" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
           <Area type="monotone" dataKey="sell" stackId="1" stroke="#ffc658" fill="#ffc658" />
         </AreaChart>
-        <p className='text-center m-3'>Investment, sells and revenue chart by AreaChart</p>
+        <p className='text-center m-3  text-info'>Investment, sells and revenue chart by AreaChart</p>
           </div>
           <div className='col-md-6 col'>
           <BarChart
@@ -77,7 +78,7 @@ const Dashboard = () => {
           <Bar dataKey="sell" fill="#82ca9d" />
           <Bar dataKey="revenue" fill="red" />
         </BarChart>
-        <p className='text-center m-3'>Investment, sells and revenue chart by BarChart</p>
+        <p className='text-center m-3  text-info'>Investment, sells and revenue chart by BarChart</p>
           </div>
           <div className='col-md-6 col'>
          
@@ -87,7 +88,7 @@ const Dashboard = () => {
           <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={130} outerRadius={150} fill="#82ca9d" label />
         </PieChart>
       
-      <p className='text-center m-3'>Investment, sells and revenue chart by PieChart</p>
+      <p className='text-center m-3  text-info'>Investment, sells and revenue chart by PieChart</p>
           </div>
         </div>
      
