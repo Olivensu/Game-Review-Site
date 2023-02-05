@@ -42,3 +42,17 @@
 .home-review {
     
 }
+
+@media only screen and (max-width: 800px) {
+    .home{
+        position: relative;
+        background-image: url('../../img/cover.jpg');
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size:cover;
+    }
+
+    .nab-btn{
+        display:inline-block;
+    }
+  }

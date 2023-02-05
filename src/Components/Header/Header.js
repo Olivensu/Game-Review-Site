@@ -1,31 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
+import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/solid'
 
 const Header = () => {
   let ClassName = "link";
   let activeClassName = "active-link";
+  const navRef = useRef();
+
+  const showNavbar =() =>{
+    navRef.current.classList.toggle('responsive-nav')
+  }
   return (
     <div className="header">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/">
-          <h3 className="logo">
+      <NavLink className='logo'  to="/">
             Spider-<span className="spider-man">Man</span>
-          </h3>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        </NavLink>
+      <nav ref={navRef}>
             <NavLink
               className={({ isActive }) =>
                 isActive ? activeClassName : ClassName
@@ -66,9 +57,9 @@ const Header = () => {
             >
               ABOUT
             </NavLink>
-          </ul>
-        </div>
+            <XMarkIcon onClick={showNavbar} className="nav-btn nav-close-btn XMarkIcon"></XMarkIcon>
       </nav>
+      <Bars4Icon onClick={showNavbar} className="Bars4Icon nav-btn"></Bars4Icon>
     </div>
   );
 };
