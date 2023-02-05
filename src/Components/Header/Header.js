@@ -21,7 +21,6 @@ const Header = () => {
                 <NavLink className={({ isActive }) =>
               isActive ? activeClassName : ClassName} to='/ABOUT'>ABOUT</NavLink>
             </div>
-            
         </div>
     );
 };
