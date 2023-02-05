@@ -15,7 +15,7 @@ const Dashboard = () => {
           <h2 className='text-center fw-bold mb-4'>Here is some chart about my statistics of this business..</h2>
             <div className='col-md-6 col'>
               <LineChart
-              width={500}
+              width={300}
               height={300}
               data={data}
               margin={{
@@ -37,8 +37,8 @@ const Dashboard = () => {
           </div>
           <div className='col-md-6 col'>
           <AreaChart
-          width={500}
-          height={400}
+          width={300}
+          height={300}
           data={data}
           margin={{
             top: 10,
@@ -59,7 +59,7 @@ const Dashboard = () => {
           </div>
           <div className='col-md-6 col'>
           <BarChart
-          width={500}
+          width={300}
           height={300}
           data={data}
           margin={{
@@ -82,7 +82,7 @@ const Dashboard = () => {
           </div>
           <div className='col-md-6 col'>
          
-        <PieChart width={400} height={400}>
+        <PieChart width={300} height={300}>
           <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
           <Pie data={data} dataKey="sell" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="red" label />
           <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={130} outerRadius={150} fill="#82ca9d" label />

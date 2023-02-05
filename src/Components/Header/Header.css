@@ -79,7 +79,7 @@
         gap: 1.5rem;
         background-color: black;
         transition: 1s;
-        transform: translateY(-100vh);
+        transform: translateY(-110vh);
     }
 
     .header .responsive-nav{
